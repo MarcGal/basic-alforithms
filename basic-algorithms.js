@@ -7,7 +7,7 @@
 
 // Print "The navigator's name is YYYY"
 
-// Conditionals
+// --------------------------- Conditionals --------------------------- 
 // Depending on which name is longer, print:
 // The Driver has the longest name, it has XX characters or
 // Yo, navigator got the longest name, it has XX characters or
@@ -47,7 +47,7 @@ for (var i = hacker1.length - 1; i >= 0; i--){
 
 console.log(newHacker);
 
-// Depending on the lexicographic order of the strings, print:
+// ---------------------------  Depending on the lexicographic order of the strings, print: --------------
 
 // The driver's name goes first
 // Yo, the navigator goes first definitely
@@ -57,7 +57,15 @@ console.log(newHacker);
 
 
 
-// Bonus Time!
+
+
+
+
+
+
+
+
+// ---------------------------  Bonus Time! --------------------------- 
 // Ask the user for a new string and check if it's a Palindrome. Examples of palindromes:
 
 // "A man, a plan, a canal, Panama!"
