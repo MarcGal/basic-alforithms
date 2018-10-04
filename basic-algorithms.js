@@ -55,6 +55,8 @@ console.log(newHacker);
 
 
 
+Check local compare method MSInputMethodContext
+ 
 
 
 
