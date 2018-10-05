@@ -62,10 +62,6 @@ if (hacker1.localeCompare(hacker2) === -1){
   console.log("What?! You both got the same name?");
 }
 
- 
-
-
-
 
 // ---------------------------  Bonus Time! --------------------------- 
 // Ask the user for a new string and check if it's a Palindrome. Examples of palindromes:
@@ -82,4 +78,4 @@ if (hacker1.localeCompare(hacker2) === -1){
 
 // Generate 3 parragraphs. Store the text in a String
 // Make your program count the number of words in the string
-// Make your program count the number of times the latin word etappears
+// Make your program count the number of times the latin word et appears
