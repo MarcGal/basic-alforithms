@@ -13,10 +13,11 @@
 // Yo, navigator got the longest name, it has XX characters or
 // wow, you both got equally long names, XX characters!!
 
-var hacker1 = 'Pedro';
+var hacker1 = 'A';
 
 // console.log("The driver's name is XXXX");
 
+var hacker2 = 'B';
 // // var hacker2 = prompt("What's the navigators name:");
 
 // console.log("The navigator's name is YYYY");
@@ -35,7 +36,7 @@ var hacker1 = 'Pedro';
 // Print all the characters of the driver's name, separated by a space and in capitals ie. "J O H N"
 
 
-console.log(hacker1.toUpperCase(' ').split(''));
+// console.log(hacker1.toUpperCase(' ').split(''));
 
 // Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
 
@@ -53,16 +54,15 @@ console.log(newHacker);
 // Yo, the navigator goes first definitely
 // What?! You both got the same name?
 
+if (hacker1.localeCompare(hacker2) === -1){
+  console.log("The driver's name goes first");
+}else if(hacker1.localeCompare(hacker2) === 1){
+  console.log("Yo, the navigator goes first definitely");
+}else{
+  console.log("What?! You both got the same name?");
+}
 
-
-Check local compare method MSInputMethodContext
  
-
-
-
-
-
-
 
 
 
