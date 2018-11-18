@@ -39,7 +39,7 @@ for(var i = 0; i< hacker1.length; i++){
 
     hacker1Mayus += hacker1[i].toUpperCase() + " ";
 }
-console.log(hacker1Mayus);
+// console.log(hacker1Mayus);
 
 
 
@@ -51,7 +51,7 @@ for( var j = hacker2.length; j>=0; j--){
     hacker2Revers += hacker2[j];
 }
 
-console.log(hacker2Revers);
+// console.log(hacker2Revers);
 
 
 // Depending on the lexicographic order of the strings, print:
@@ -71,71 +71,51 @@ if (hacker1.localeCompare(hacker2)=== -1){
 
 // ------------------- PALINDROME CHECK ----------------------------
 
-// var string = "Amor, Roma";
-// var string1 = "";
-// var string2 = "";
-// var stringReversed = "";
+newStr = "";
+inverseStr = "";
+
+function palidromeCheck (str){
+  newStr = str.toLowerCase().replace(/\s/g,'');
+
+  for (var s = newStr.length; s > 0; s--){
+    inverseStr = newStr[s];
+  }
+  
+  if (newStr === inverseStr){
+    console.log ("Wow we've got a palindrome!");
+  }else{
+    console.log("This is not a palindrome");
+  }
+  
+}
+  
+  
+palidromeCheck('Amor Roma');
 
 
-//   for (var t = 0; t < string.length; t++){
-//     if (string[t]=== " " || string[t]=== ","){
-//       string1 = string.replace([t], "").toLowerCase();
-//     }
-//   } 
+palidromeCheck('Marco Gallo');
+
+
+
+
 
 
 
 // console.log(string1);
 
-var name = "Marco Gallo";
-var newName = name.toLowerCase().split("");
-var newNewName = [];
+// var name = "Marco Gallo";
+// var newName = name.toLowerCase().split("");
+// var newNewName = [];
 
-for (var i = 0; i < newName.length; i++){
- if (newName[i] === " "){
-   newName.splice(newName[i]);  
- }
-}
-
-
-
-
-
-
-
-
-
-
-  //   for (var t = 0; t < string.length; t++){
-    
-//     if (string[t]=== "," || string[t] === " "){
-//        string.replace(",", ""); 
-//        string.replace(" ", "");
-      
-//        var onlyLetters1 = string;
-      
-//       return onlyLetters1;
-//     }
-//   }
-
-//   stringReversed = string.split("").reverse().join("").toUpperCase();
-
-//   for (var g = 0; g < stringReversed.length; g++){
-    
-//     if (stringReversed[g]=== "," || stringReversed[g] === " "){
-//        stringReversed.replace(",", ""); 
-//        stringReversed.replace(" ", "");
-      
-//        var onlyLetters2 = stringReversed;
-      
-//        return onlyLetters2;
-//     }
-//   }
-
-//   if (onlyLetters1 === onlyLetters2){
-//     return true;
-//   }else{
-//     return false;
-//   }
+// for (var i = 0; i < newName.length; i++){
+//  if (newName[i] === " "){
+//    newName[i]= "";  
+//  }
 // }
+
+
+
+
+
+
 
