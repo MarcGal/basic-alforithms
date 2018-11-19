@@ -43,32 +43,35 @@
 
 
 
-// // Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
+// Print all the characters of the navigator's name, in reverse order. ie. "nhoJ"
 
-// let hacker2Revers;
+let hacker2Revers;
 
-// for( var j = hacker2.length; j>=0; j--){
-//     hacker2Revers += hacker2[j];
-// }
+for( var j = hacker2.length; j>=0; j--){
+    hacker2Revers += hacker2[j];
+}
 
-// // console.log(hacker2Revers);
-
-
-// // Depending on the lexicographic order of the strings, print:
-// // The driver's name goes first
-// // Yo, the navigator goes first definitely
-// // What?! You both got the same name?
+console.log(hacker2Revers);
 
 
-// if (hacker1.localeCompare(hacker2)=== -1){
-//   console.log("The driver's name goes first");
+// Depending on the lexicographic order of the strings, print:
 
-// }else if (hacker1.localeCompare(hacker2)=== 1){
-//   console.log("Yo, the navigator goes first definitely");
+// The driver's name goes first
+// Yo, the navigator goes first definitely
+// What?! You both got the same name?
 
-// } else {
-//   console.log("What?! You both got the same name?");
-// }
+
+if (hacker1.localeCompare(hacker2)=== -1){
+  console.log("The driver's name goes first");
+
+}else if (hacker1.localeCompare(hacker2)=== 1){
+  console.log("Yo, the navigator goes first definitely");
+
+} else {
+  console.log("What?! You both got the same name?");
+}
+
+
 
 // ------------------- PALINDROME CHECK ----------------------------
 
@@ -88,23 +91,33 @@ function palidromeCheck (str){
 };
   
   
-palidromeCheck('Marco Gallo');
-
-
-
-// for (var s = newStr.length; s >= 0; s--){
-//   inverseStr += newStr[s];
-
-//   if (newStr === inverseStr){
-//     console.log ("Wow we've got a palindrome!");
-//   }else{
-//     console.log("This is not a palindrome");
-//   }
-// }
+palidromeCheck('step on no pets');
 
 
 
 
+// ------------------- Paragraph program ----------------------------
+
+var para = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ac pulvinar purus, vitae tincidunt lorem. Nulla sagittis ante sed felis gravida blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquam felis mi, id volutpat velit sagittis et. Morbi sit amet maximus purus. Aenean tortor turpis, blandit eget enim a, dictum bibendum leo. Vestibulum elementum ultrices dignissim. Vestibulum ac neque vel ex malesuada convallis. Curabitur purus urna, pellentesque vel elit vel, malesuada feugiat turpis. Morbi et eros purus. In auctor blandit laoreet. Curabitur volutpat mauris sed sem pretium, vitae facilisis libero consequat. Donec luctus tortor at congue auctor. Nullam diam metus, tempus convallis enim vitae, accumsan feugiat sapien. Morbi a nunc nec tortor scelerisque rutrum non suscipit mauris. Proin elit turpis, ornare nec finibus ut, pretium eget nunc";
+
+var etNumber = 0;
+
+function paragraph (parag){
+
+  separateWords = parag.split(" ");
+  numberOfWords = separateWords.length;
+  console.log(numberOfWords);
 
 
+// ESTA FUNCION NO ESTA CONTANDO DEBIDAMENTE, NO ENTIENDO PORQUE.
+  for (var d = 0; d < separateWords.length; d++){
+    if (separateWords[d] === "et"){
+      etNumber ++;
+    }
+    return etNumber;
+  }
+  console.log(etNumber);
+  
+}
 
+paragraph(para);
