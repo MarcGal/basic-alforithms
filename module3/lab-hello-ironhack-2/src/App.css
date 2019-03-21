@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.element-margin {
+  margin: 0;
+}
+.background-dark{
+  background-color: #1F2535;
+  color: white;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.menu {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+.iron-logo {
+  padding-top: 20px;
+  padding-left: 30px;
+}
+
+h1{
+  margin: 0;
+  font-size: 70px;
+}
+
+header {
+  height: 300px;
+  padding-top: 80px;
+  padding-left: 30px;
+}
+
+.header-text{
+  font-size: 25px;
+  margin: 0;
+  font-weight: 100px;
+}
+
+button {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  margin-top:50px;
+}
+
